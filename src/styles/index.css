@@ -1,0 +1,36 @@
+@import "tailwindcss";
+/* components -> SideBar -> SideBarHeader.jsx  */
+.status:after {
+  content: "";
+  position: absolute;
+  background: #5db900;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  top: 4px;
+}
+/* components -> SideBar -> SideBarItems.jsx  */
+.isActivated:after {
+  content: "";
+  background: #2563eb;
+  position: absolute;
+  width: 360px;
+  height: 70px;
+  left: -20px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  transition: all 0.3s;
+}
+/* components -> Overview -> Header0verview.jsx */
+.notification-counter {
+  content: "";
+  background: #ff1919;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  top: 5px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
