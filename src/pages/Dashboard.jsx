@@ -6,7 +6,6 @@ const Dashboard = () => {
   return (
     <>
       <section className="flex gap-20 ">
-        <SideBar />
         <Overview />
       </section>
     </>
