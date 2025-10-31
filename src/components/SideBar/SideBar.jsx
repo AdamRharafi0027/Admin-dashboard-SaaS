@@ -7,7 +7,7 @@ import SideBarHeader from "./SideBarHeader";
 const SideBar = () => {
   return (
     <>
-      <main className="h-screen bg-[#1E293B] w-100 text-white py-6 overflow-hidden">
+      <main className="h-screen bg-[#1E293B] w-100 text-white py-6 overflow-hidden sticky top-0">
         <SideBarHeader />
         <SideBarItems />
         <PrimaryButton classname={"px-10 py-3"}>
