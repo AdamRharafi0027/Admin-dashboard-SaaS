@@ -39,10 +39,10 @@ const OrdersTable = () => {
 
   return (
     <>
-      <section className="scale-95 w-200">
+      <section className=" w-full">
         <h3 className="text-[#475569] mb-5 text-2xl">Latest Orders</h3>
         <table className="flex flex-col gap-5 overflow-y-scroll h-100 ">
-          <tr className="bg-[#F1F5F9] rounded-lg text-[#475569] flex px-5 py-5 gap-25 items-center mr-9 ">
+          <tr className="bg-[#F1F5F9] rounded-lg text-[#475569] flex px-15 py-5 gap-25 items-center mr-9 sticky top-0 justify-between">
             <th>Costomers</th>
             <th>Order N</th>
             <th>Product</th>
@@ -53,7 +53,7 @@ const OrdersTable = () => {
           {orders.map((order, index) => {
             return (
               <tr
-                className="bg-[#F9F9F9] rounded-lg flex px-5 py-5 gap-25 items-center mr-9 "
+                className="bg-[#F9F9F9] rounded-lg flex px-5 py-5 gap-25 items-center mr-9 justify-between"
                 key={index}
               >
                 <td className="flex items-center gap-2">

@@ -21,11 +21,12 @@ const data = [
 
 const SummarySales = () => {
   return (
-    <div className="bg-white p-5 rounded-2xl shadow-md w-200 scale-90">
+    <div className="bg-white p-5 rounded-2xl shadow-md w-full ">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-800">Summary Sales</h2>
-        <span className="text-sm text-gray-500">Last 7 months</span>
+      <div className="mb-2 flex justify-between items-center text-[#475569]">
+        <h2 className="text-2xl">Summary Sales</h2>
+        <h1 className="text-5xl ">$32,000.00</h1>
+        <h4>Last 7 months</h4>
       </div>
 
       {/* Chart */}
@@ -53,18 +54,14 @@ const SummarySales = () => {
         </ResponsiveContainer>
       </div>
 
-      {/* Stats Footer */}
-      <div className="flex justify-between items-center mt-5">
-        <div>
-          <p className="text-sm text-gray-500">Total Sales</p>
-          <h3 className="text-2xl font-bold text-gray-800">$32,550</h3>
-        </div>
-        <div className="text-green-600 text-sm font-medium bg-green-50 px-3 py-1 rounded-full">
-          +12.3%
-        </div>
-      </div>
+     
+      
     </div>
   );
 };
 
 export default SummarySales;
+
+
+
+

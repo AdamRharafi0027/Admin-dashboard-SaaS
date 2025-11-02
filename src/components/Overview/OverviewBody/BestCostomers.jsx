@@ -1,38 +1,74 @@
+
 import { CircleUserRound, Crown } from "lucide-react";
 
-const BestCostomers = () => {
+const BestCustomers = () => {
+  // ✅ Dynamic Data
+  const topCustomers = [
+    {
+      name: "John Carter",
+      rank: 1,
+      color: "#2563EB", // blue
+      crown: true,
+    },
+    {
+      name: "Sophie Miller",
+      rank: 2,
+      color: "#5C8AEF", // lighter blue
+      crown: false,
+    },
+    {
+      name: "Daniel Smith",
+      rank: 3,
+      color: "#8DADF2", // lightest blue
+      crown: false,
+    },
+  ];
+
   return (
-    <>
-      <div className="card bg-[#F1F5F9] rounded-lg mr-10 px-10 py-6 w-200">
-        <h1 className="text-3xl font-bold">Customers</h1>
-        <p className="text-[#475569] mb-5">See All The Best Customers</p>
-        <div className=" text-white flex flex-col gap-8 pb-10">
-          <div className="bg-[#2563EB] shadow-2xl rounded-md flex justify-between items-center px-4 py-3 relative">
-            <Crown className=" absolute -top-10 -left-8 -rotate-40" size={60} fill="#F59E0B" color="#F59E0B"  />
+    <div className="card bg-[#F1F5F9] rounded-lg p-8 w-full max-w-md shadow-md">
+      {/* Header */}
+      <h1 className="text-3xl font-bold text-gray-800 mb-1">Top Customers</h1>
+      <p className="text-[#475569] mb-8">See your best performing customers</p>
+
+      {/* Customer Cards */}
+      <div className="flex flex-col gap-6">
+        {topCustomers.map((customer, index) => (
+          <div
+            key={index}
+            className="relative rounded-lg text-white flex justify-between items-center px-5 py-4 shadow-lg transition-all duration-300 hover:scale-[1.02]"
+            style={{ backgroundColor: customer.color }}
+          >
+            {/* Crown for #1 */}
+            {customer.crown && (
+              <Crown
+                className="absolute -top-8 -left-6 rotate-[-30deg]"
+                size={60}
+                fill="#FBBF24"
+                color="#FBBF24"
+              />
+            )}
+
+            {/* Left side */}
             <div className="flex items-center gap-3">
-                <CircleUserRound size={50} />
-                <h3 className="text-2xl">username</h3>
+              <CircleUserRound
+                size={48}
+                className="p-1 bg-white/20 rounded-full"
+              />
+              <div>
+                <h3 className="text-xl font-semibold">{customer.name}</h3>
+                <p className="text-sm text-white/80">Customer #{customer.rank}</p>
+              </div>
             </div>
-            <span className="text-3xl font-bold">#1</span>
+
+            {/* Rank Badge */}
+            <span className="text-3xl font-bold drop-shadow-md">
+              #{customer.rank}
+            </span>
           </div>
-          <div className="bg-[#5C8AEF] shadow-2xl rounded-md flex justify-between items-center px-4 py-3 scale-95">
-            <div className="flex items-center gap-3">
-                <CircleUserRound size={50} />
-                <h3 className="text-2xl">username</h3>
-            </div>
-            <span className="text-3xl font-bold">#1</span>
-          </div>
-          <div className="bg-[#8DADF2] shadow-2xl rounded-md flex justify-between items-center px-4 py-3 scale-90">
-            <div className="flex items-center gap-3">
-                <CircleUserRound size={50} />
-                <h3 className="text-2xl">username</h3>
-            </div>
-            <span className="text-3xl font-bold">#1</span>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default BestCostomers;
+export default BestCustomers;
