@@ -5,8 +5,10 @@ import OverviewBody from './OverviewBody/OverviewBody'
 const Overview = () => {
   return (
     <>
-        <section className=' flex-col w-340 absolute top-0 right-20'>
-          <HeaderOverview />
+        <section className=' flex-col w-340 absolute top-10 right-20'>
+          <HeaderOverview>
+            Overiew
+          </HeaderOverview>
           <OverviewBody />
         </section>
     

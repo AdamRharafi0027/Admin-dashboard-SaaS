@@ -13,18 +13,7 @@
   border-radius: 100px;
   top: 4px;
 }
-/* components -> SideBar -> SideBarItems.jsx  */
-.isActivated:after {
-  content: "";
-  background: #2563eb;
-  position: absolute;
-  width: 360px;
-  height: 70px;
-  left: -20px;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  transition: all 0.3s;
-}
+
 /* components -> Overview -> Header0verview.jsx */
 .notification-counter {
   content: "";

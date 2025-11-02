@@ -8,6 +8,7 @@ const App = () => {
     <>
       <Router>
         <SideBar/>
+
         <Routes>
           <Route path='/' element={<DashboardLayout />} />
         </Routes>

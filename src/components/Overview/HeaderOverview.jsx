@@ -1,11 +1,11 @@
 import PrimaryButton from '../ui/PrimaryButton'
 import { Bell, Moon } from 'lucide-react'
 
-const HeaderOverview = () => {
+const HeaderOverview = ({children}) => {
   return (
     <>
-      <header className='mt-5 flex justify-between items-center '> 
-        <h1 className='font-bold text-4xl'>Overview</h1>
+      <header className=' flex justify-between items-center '> 
+        <h1 className='font-bold text-4xl'>{children}</h1>
         <div className=" flex items-center gap-10 -mt-12">
           <PrimaryButton  classname={"px-4 py-2"}>
             <Moon size={40}/>

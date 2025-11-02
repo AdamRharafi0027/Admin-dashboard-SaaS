@@ -7,9 +7,9 @@ const SideBarHeader = () => {
         <h1 className="pb-5 text-center text-4xl font-bold">E-COMMERCE</h1>
         <div className="border"></div>
         <div className="admin-data p-4 flex items-center gap-4">
-          <CircleUserRound size={60} />
+          <CircleUserRound size={60} color="#BFD8FF" />
           <div className="info">
-            <h3 className="text-2xl">Admin AD</h3>
+            <h3 className="text-2xl font-bold text-[#BFD8FF]">Admin AD</h3>
             <div className="flex gap-2">
               <div className="admin-status ">
                 {/* Styles -> index.css */}
