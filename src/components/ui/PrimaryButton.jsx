@@ -1,6 +1,6 @@
 const PrimaryButton = ({children, classname}) => {
   return (
-    <button className={`bg-[#2563EB] text-white rounded-sm flex items-center justify-center gap-3  text-2xl m-auto mt-13 relative cursor-pointer hover:bg-[#6492f5] transition-all ${classname}`}>{children}</button>
+    <button className={`bg-[#2563EB] text-white rounded-sm flex items-center justify-center gap-3  text-2xl m-auto mt-13  cursor-pointer hover:bg-[#6492f5] transition-all ${classname}`}>{children}</button>
   )
 }
 
