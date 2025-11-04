@@ -1,13 +1,13 @@
 import React from "react";
 import ContentSide from "../ContentSide";
-import HeaderOverview from "../HeaderOverview";
+import Header from "../Header";
 import ProductsBody from "./ProductsBody/ProductsBody";
 
 const ProductsView = () => {
   return (
     <>
       <ContentSide>
-        <HeaderOverview>Products State</HeaderOverview>
+        <Header>Products State</Header>
         <ProductsBody />
       </ContentSide>
     </>

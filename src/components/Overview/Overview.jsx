@@ -1,12 +1,12 @@
 import ContentSide from "../ContentSide";
-import HeaderOverview from "../HeaderOverview";
+import Header from "../Header";
 import OverviewBody from "./OverviewBody/OverviewBody";
 
 const Overview = () => {
   return (
     <>
       <ContentSide>
-        <HeaderOverview>Overview</HeaderOverview>
+        <Header>Overview</Header>
         <OverviewBody />
       </ContentSide>
     </>

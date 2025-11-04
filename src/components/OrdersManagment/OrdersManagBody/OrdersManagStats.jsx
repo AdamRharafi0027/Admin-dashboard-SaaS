@@ -1,13 +1,11 @@
 import Card from "../../Card";
-
 const stats = [
-  { title: "Total Products", total: "5,320" },
-  { title: "Total Sales", total: "4,533" },
-  { title: "Total Customers", total: "+312" },
-  { title: "Orders", total: "320" },
+  { title: "Total Orders", total: "1,220" },
+  { title: "Pending Orders", total: "133" },
+  { title: "Delivered Orders", total: "1,312" },
+  { title: "Cancelled Orders", total: "20" },
 ];
-
-const ProductsStats = () => {
+const OrdersManagStats = () => {
   return (
     <>
       <div className="cards px-10 flex gap-10 text-[#475569] items-center justify-around">
@@ -16,7 +14,7 @@ const ProductsStats = () => {
         })}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ProductsStats;
+export default OrdersManagStats

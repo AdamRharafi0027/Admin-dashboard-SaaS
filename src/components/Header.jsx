@@ -1,7 +1,7 @@
 import PrimaryButton from "./ui/PrimaryButton";
 import { Bell, Moon } from "lucide-react";
 
-const HeaderOverview = ({ children }) => {
+const Header = ({ children }) => {
   return (
     <>
       <header className="mt-5 flex justify-between items-center ">
@@ -20,4 +20,4 @@ const HeaderOverview = ({ children }) => {
   );
 };
 
-export default HeaderOverview;
+export default Header;

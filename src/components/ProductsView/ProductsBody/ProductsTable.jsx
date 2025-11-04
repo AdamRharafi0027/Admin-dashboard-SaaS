@@ -63,12 +63,72 @@ const ProductsTable = () => {
         <Trash color="#2563EB" />,
       ],
     },
+    {
+      product_name: "product",
+      product_category: "games",
+      product_image: exampleImage,
+      product_name: "Product",
+      product_price: 320,
+      product_stock: 45,
+      product_progress: "+20%",
+      product_status: "available",
+      actions: [
+        <Eye color="#2563EB" />,
+        <Bolt color="#2563EB" />,
+        <Trash color="#2563EB" />,
+      ],
+    },
+    {
+      product_name: "product",
+      product_category: "games",
+      product_image: exampleImage,
+      product_name: "Product",
+      product_price: 320,
+      product_stock: 45,
+      product_progress: "+20%",
+      product_status: "available",
+      actions: [
+        <Eye color="#2563EB" />,
+        <Bolt color="#2563EB" />,
+        <Trash color="#2563EB" />,
+      ],
+    },
+    {
+      product_name: "product",
+      product_category: "games",
+      product_image: exampleImage,
+      product_name: "Product",
+      product_price: 320,
+      product_stock: 45,
+      product_progress: "+20%",
+      product_status: "available",
+      actions: [
+        <Eye color="#2563EB" />,
+        <Bolt color="#2563EB" />,
+        <Trash color="#2563EB" />,
+      ],
+    },
+    {
+      product_name: "product",
+      product_category: "games",
+      product_image: exampleImage,
+      product_name: "Product",
+      product_price: 320,
+      product_stock: 45,
+      product_progress: "+20%",
+      product_status: "available",
+      actions: [
+        <Eye color="#2563EB" />,
+        <Bolt color="#2563EB" />,
+        <Trash color="#2563EB" />,
+      ],
+    },
   ];
 
   return (
     <>
       <section className="w-full">
-        <h3 className="text-[#475569] mb-5 text-2xl">Latest Orders</h3>
+        <h3 className="text-[#475569] mb-5 text-2xl">Products Table</h3>
 
         <div className="overflow-y-auto max-h-[400px] rounded-lg">
           <table className="w-full border-collapse">
