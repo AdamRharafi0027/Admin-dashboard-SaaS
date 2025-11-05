@@ -1,7 +1,7 @@
 import { FunnelPlus, Search } from "lucide-react";
-import PrimaryButton from "../../ui/PrimaryButton";
+import PrimaryButton from "./ui/PrimaryButton";
 
-const SearchOrders = () => {
+const SearchComponent = ({placeholder}) => {
   return (
     <>
       <div className="flex justify-between">
@@ -13,7 +13,7 @@ const SearchOrders = () => {
           <Search className="text-slate-500" size={20} />
           <input
             type="text"
-            placeholder="Search by customer name, ID..."
+            placeholder={placeholder}
             className="outline-none bg-transparent w-full text-slate-700 placeholder:text-slate-400"
             required
           />
@@ -23,4 +23,4 @@ const SearchOrders = () => {
   );
 };
 
-export default SearchOrders;
+export default SearchComponent;
