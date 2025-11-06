@@ -45,9 +45,9 @@ const OrdersPieChart = () => {
 
           <Tooltip
             contentStyle={{
-              backgroundColor: "#1e293b",
+              backgroundColor: "#2563EB",
               borderRadius: "8px",
-              color: "#fff",
+              color: "#ffffff",
               border: "none",
             }}
           />
