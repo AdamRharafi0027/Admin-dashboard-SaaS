@@ -1,9 +1,9 @@
 import {
+  Bell,
   Box,
   LayoutDashboard,
   Settings,
   ShoppingBag,
-  TrendingUpDown,
   Users,
 } from "lucide-react";
 import { useState } from "react";
@@ -18,7 +18,7 @@ const SideBarItems = () => {
     { name: "Products", icon: <Box size={28} />, path: "/products" },
     { name: "Orders", icon: <ShoppingBag size={28} />, path: "/orders" },
     { name: "Clients", icon: <Users size={28} />, path: "/clients" },
-    { name: "Analytics", icon: <TrendingUpDown  size={28} />, path: "/analytics" },
+    { name: "Notifications", icon: <Bell   size={28} />, path: "/notifications" },
     { name: "Settings", icon: <Settings size={28} />, path: "/settings" },
   ];
 
